@@ -84,7 +84,7 @@ function start() {
 
 //event listener for textarea box
 
-textArea.addEventListener("keypress", start);
-textArea.addEventListener("keyup", spellCheck);
+textArea.addEventListener("keypress", start, false);
+textArea.addEventListener("keyup", spellCheck, false);
 
-resetBtn.addEventListener("click", reset);
+resetBtn.addEventListener("click", reset, false);
