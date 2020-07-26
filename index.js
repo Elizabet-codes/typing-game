@@ -32,9 +32,9 @@ function runTimer() {
   timer.innerHTML = currentTime;
   timers[3]++;
 
-  timers[0] = Math.floor(timers[3] / 100 / 60);
-  timers[1] = Math.floor(timers[3] / 100 - timers[0] * 60);
-  timers[2] = Math.floor(timers[3] - timers[1] * 100 - timers[0] * 6000);
+  timers[0] = Math.floor((timers[3] / 100) / 60);
+  timers[1] = Math.floor((timers[3] / 100) - (timers[0] * 60));
+  timers[2] = Math.floor(timers[3] - (timers[1] * 100) - (timers[0] * 6000));
 }
 
 //reset btn
