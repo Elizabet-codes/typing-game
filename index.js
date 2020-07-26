@@ -40,8 +40,8 @@ function runTimer() {
 //reset btn
 function reset() {
   clearInterval(interval);
-//   interval = null;
-//   timers = [0, 0, 0, 0];
+  interval = null;
+  timers = [0, 0, 0, 0];
   timeRunning=false;
   textArea.value="";
   timer.innerHTML="00:00:00";
